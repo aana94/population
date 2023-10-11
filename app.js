@@ -8,6 +8,7 @@ var db = mongoose.connection;
 var routes = require('./routes/population');
 
 const app = express();
+app.use(express.text());
 
 app.set('view engine', 'ejs');
 
